@@ -55,7 +55,7 @@ output "config_map_aws_auth" {
 }
 
 output "kubeconfig" {
-  value = "${local.kubeconfig}"
+  value = "${"/home/stefan/.kube/Sandbox/EKS/config"}"
 }
 
 output "cluster_arn" {
