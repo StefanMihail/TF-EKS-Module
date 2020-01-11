@@ -17,7 +17,7 @@ variable "customer" {
 #var.cluster-name
 variable "cluster-name" {
   type    = "string"
-  default = "omni-tech.org"
+  default = "OmniTech"
 }
 
 #var.vpc_id
