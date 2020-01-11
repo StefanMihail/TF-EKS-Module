@@ -69,7 +69,7 @@ variable "max_nodes" {
 #var.vpn_ssl_pool
 variable "vpn_ssl_pool" {
   description = "The VPN SSL pool, to allow SSH from"
-  default     = ["0.0.0.0/0	"]
+  default     = ["0.0.0.0/0"]
   type    = "list"
 }
 
