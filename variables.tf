@@ -40,7 +40,7 @@ variable "node_subnet_ids" {
 
 #var.instance_type
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t2.small"
   type    = "string"
 }
 
