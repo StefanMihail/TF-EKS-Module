@@ -22,20 +22,20 @@ variable "cluster-name" {
 
 #var.vpc_id
 variable "vpc_id" {
-  default = "vpc-0127ff98c92a36c9a"
+  default = "vpc-0340c8fccb52dec94"
   type    = "string"
 }
 
 #var.master_subnet_ids
 variable "master_subnet_ids" {
   type    = "list"
-  default = ["subnet-07d2ac82356e01fe9","subnet-0cd2e8fc00aee53ba"]
+  default = ["subnet-0320d03fd99018ef6","subnet-0ed11bd2c02f777c1","subnet-06d545b8164db8f7a"]
 }
 
 #var.node_subnet_ids
 variable "node_subnet_ids" {
   type    = "list"
-    default = ["subnet-07d2ac82356e01fe9","subnet-0cd2e8fc00aee53ba", "subnet-0e6f8ecea470be6e0"]
+    default = ["subnet-0320d03fd99018ef6","subnet-0ed11bd2c02f777c1","subnet-06d545b8164db8f7a"]
 }
 
 #var.instance_type
@@ -69,7 +69,7 @@ variable "max_nodes" {
 #var.vpn_ssl_pool
 variable "vpn_ssl_pool" {
   description = "The VPN SSL pool, to allow SSH from"
-  default     = ["0.0.0.0/0"]
+  default     = ["192.168.255.0/24"]
   type    = "list"
 }
 
