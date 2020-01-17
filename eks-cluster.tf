@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "eu-central-1"
+}
+
 #
 # EKS Cluster Resources
 #  * IAM Role to allow EKS service to manage other AWS services
