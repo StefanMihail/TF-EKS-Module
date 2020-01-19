@@ -75,7 +75,7 @@ Copy the above example to your Terraform code and replace the variables as you w
 ### Step 2
 
 Once done, configure kubectl config from the Terraform output starting from:
-`terraform output -module=eks kubeconfig > ~/.kube/NAME_OF_KUBECONFIG`
+`terraform output kubeconfig > ~/.kube/NAME_OF_KUBECONFIG`
 
 ### Step 3
 
@@ -92,7 +92,7 @@ You should get at least 1 namespace.
 Once kubectl is configured and working, create the configmap from the Terraform output so nodes will be discovered by the masters.
 
 ```shell
-terraform output -module=eks config_map_aws_auth > ./.terraform/config_auth.yml
+terraform output config_map_aws_auth > ./.terraform/config_auth.yml
 kubectl apply -f ./.terraform/config_auth.yml
 ```
 
